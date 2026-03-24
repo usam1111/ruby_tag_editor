@@ -1,0 +1,141 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0 0 0.4rem 0;
+}
+
+.app-desc {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  min-height: 0; /* flex child scrolling */
+}
+
+.editor-area, .preview-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.area-title {
+  background: #e9ecef;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.source-textarea {
+  flex: 1;
+  border: none;
+  padding: 1.5rem;
+  resize: none;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  outline: none;
+  color: #212529;
+}
+
+.source-textarea:focus {
+  background-color: #fffdf5; /* highlight slightly on focus */
+}
+
+.preview-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #212529;
+  white-space: pre-wrap; /* Preserve line breaks if any plain text is here */
+}
+
+ruby {
+  ruby-align: center;
+  margin: 0 0.1em;
+}
+
+rt {
+  font-size: 0.42em; /* 今の(0.6emの)70%サイズ */
+  color: #6c757d;
+  font-weight: normal;
+}
+
+.button-area {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0b5ed7;
+}
+
+button.btn-secondary {
+  background-color: #6c757d;
+}
+
+button.btn-secondary:hover:not(:disabled) {
+  background-color: #5c636a;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+}
+
+button.btn-danger:hover:not(:disabled) {
+  background-color: #bb2d3b;
+}
+
+button:disabled {
+  background-color: #e9ecef;
+  color: #adb5bd;
+  cursor: not-allowed;
+}

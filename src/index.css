@@ -1,0 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: none !important; /* 幅制限を解除して最大限広げる */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+* {
+  box-sizing: border-box;
+}
